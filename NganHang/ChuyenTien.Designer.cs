@@ -137,7 +137,7 @@
             this.btChuyenTien.TabIndex = 22;
             this.btChuyenTien.Text = "Chuyển Tiền";
             this.btChuyenTien.UseVisualStyleBackColor = true;
-            
+           
             // 
             // btThoat
             // 
@@ -149,7 +149,7 @@
             this.btThoat.TabIndex = 23;
             this.btThoat.Text = "Thoát";
             this.btThoat.UseVisualStyleBackColor = true;
-            
+           
             // 
             // ChuyenTien
             // 
@@ -175,7 +175,7 @@
             this.Name = "ChuyenTien";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ChuyenTien";
-            
+            this.Load += new System.EventHandler(this.ChuyenTien_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

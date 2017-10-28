@@ -17,7 +17,20 @@ namespace NganHang
         {
             InitializeComponent();
         }
-       
+        private void QuanLyKhacHang_Load(object sender, EventArgs e)
+        {
+
+        }
+ 
+        protected override bool ProcessDialogKey(Keys keyData)
+        {
+            
+            if (keyData == Keys.Escape)
+                this.Close();
+            return base.ProcessDialogKey(keyData);
+        }
+
+        
 
     }
 }

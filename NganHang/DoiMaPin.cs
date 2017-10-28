@@ -13,13 +13,19 @@ namespace NganHang
 {
     public partial class DoiMaPin : Form
     {
-       
+        SqlConnection ketnoi = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Vipper\Desktop\NganHang\Database\NganHang.mdf;Integrated Security=True;Connect Timeout=30");
+        public static string user5 = "";
         public DoiMaPin()
         {
             InitializeComponent();
         }
 
 
+      
+        private void DoiMaPin_Load(object sender, EventArgs e)
+        {
+       
+        }
        
 
         

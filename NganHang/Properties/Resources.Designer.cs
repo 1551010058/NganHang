@@ -103,6 +103,16 @@ namespace NganHang.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap chesapeake_bay_bridge_wikimedia_commons2 {
+            get {
+                object obj = ResourceManager.GetObject("chesapeake_bay_bridge_wikimedia_commons2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap hinh_nen_powerpoint_kinh_te_tai_chinh_3 {
             get {
                 object obj = ResourceManager.GetObject("hinh-nen-powerpoint-kinh-te-tai-chinh-3", resourceCulture);

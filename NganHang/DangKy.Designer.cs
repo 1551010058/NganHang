@@ -235,7 +235,7 @@
             this.btDangKy.TabIndex = 39;
             this.btDangKy.Text = "Đăng Ký";
             this.btDangKy.UseVisualStyleBackColor = true;
-            
+            this.btDangKy.Click += new System.EventHandler(this.btDangKy_Click);
             // 
             // btThoat
             // 
@@ -247,7 +247,7 @@
             this.btThoat.TabIndex = 40;
             this.btThoat.Text = "Thoát";
             this.btThoat.UseVisualStyleBackColor = true;
-            
+            this.btThoat.Click += new System.EventHandler(this.btThoat_Click);
             // 
             // label12
             // 
@@ -422,7 +422,7 @@
             this.Name = "DangKy";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DangKy";
-            
+            this.Load += new System.EventHandler(this.DangKy_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
