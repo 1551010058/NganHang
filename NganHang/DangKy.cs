@@ -112,12 +112,7 @@ namespace NganHang
                     MessageBox.Show(" Bạn Đăng Ký Thành Công ", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Close();
                 }
-            //else if(kiemtrataikhoantontai() == false || kiemtrasdttontai() == false || kiemtraCMNDtontai() == false)
-            //    {
-            //        Loi1.Text = null;
-            //        Loi8.Text = null;
-            //        Loi7.Text = null;
-            //    }
+            
         }
         private bool kiemtrataikhoantontai()
         {
