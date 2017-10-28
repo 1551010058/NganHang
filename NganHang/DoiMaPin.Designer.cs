@@ -134,7 +134,7 @@
             this.button1.TabIndex = 24;
             this.button1.Text = "thoát";
             this.button1.UseVisualStyleBackColor = true;
-            
+          
             // 
             // label5
             // 
@@ -187,7 +187,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DoiMaPin";
             this.TopMost = true;
-            
+            this.Load += new System.EventHandler(this.DoiMaPin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

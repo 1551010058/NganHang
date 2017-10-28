@@ -520,7 +520,7 @@
             this.Clear.TabIndex = 28;
             this.Clear.Text = "Clear";
             this.Clear.UseVisualStyleBackColor = true;
-           
+        
             // 
             // btnTimKiem
             // 
@@ -534,7 +534,7 @@
             this.btnTimKiem.TabIndex = 27;
             this.btnTimKiem.Text = "Xem ";
             this.btnTimKiem.UseVisualStyleBackColor = true;
-            
+           
             // 
             // btnThoat
             // 
@@ -548,7 +548,7 @@
             this.btnThoat.TabIndex = 25;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
-          
+            
             // 
             // btnXoa
             // 
@@ -576,7 +576,7 @@
             this.btnSua.TabIndex = 23;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
-         
+           
             // 
             // btnThemmoi
             // 
@@ -590,7 +590,7 @@
             this.btnThemmoi.TabIndex = 22;
             this.btnThemmoi.Text = "Thêm mới";
             this.btnThemmoi.UseVisualStyleBackColor = true;
-         
+           
             // 
             // QuanLyKhacHang
             // 
@@ -614,8 +614,8 @@
             this.Name = "QuanLyKhacHang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QuanLyKhacHang";
-            
-            
+           
+            this.Load += new System.EventHandler(this.QuanLyKhacHang_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

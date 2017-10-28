@@ -104,13 +104,14 @@
             this.btdangky.TabIndex = 7;
             this.btdangky.Text = "Đăng Ký";
             this.btdangky.UseVisualStyleBackColor = true;
-            
+            this.btdangky.Click += new System.EventHandler(this.btdangky_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::NganHang.Properties.Resources.chesapeake_bay_bridge_wikimedia_commons;
+            this.pictureBox1.ErrorImage = null;
+            this.pictureBox1.Image = global::NganHang.Properties.Resources.chesapeake_bay_bridge_wikimedia_commons2;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(568, 358);
@@ -130,7 +131,7 @@
             this.btdangnhap.TabIndex = 9;
             this.btdangnhap.Text = "Đăng nhập";
             this.btdangnhap.UseVisualStyleBackColor = true;
-            
+            this.btdangnhap.Click += new System.EventHandler(this.btdangnhap_Click);
             // 
             // btthoat
             // 
@@ -145,7 +146,7 @@
             this.btthoat.TabIndex = 10;
             this.btthoat.Text = "Thoát";
             this.btthoat.UseVisualStyleBackColor = true;
-            
+            this.btthoat.Click += new System.EventHandler(this.btthoat_Click);
             // 
             // DangNhap
             // 

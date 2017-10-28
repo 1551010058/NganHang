@@ -105,7 +105,7 @@
             this.btGui.TabIndex = 20;
             this.btGui.Text = "Gửi";
             this.btGui.UseVisualStyleBackColor = true;
-           
+            
             // 
             // label2
             // 
@@ -130,7 +130,7 @@
             this.btThoat.TabIndex = 22;
             this.btThoat.Text = "Thoát";
             this.btThoat.UseVisualStyleBackColor = true;
-            
+          
             // 
             // GuiTien
             // 
@@ -154,7 +154,7 @@
             this.Name = "GuiTien";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GuiTien";
-           
+            this.Load += new System.EventHandler(this.GuiTien_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -14,3 +14,35 @@ C:\Users\Vipper\documents\visual studio 2013\Projects\NganHang\NganHang\obj\Debu
 C:\Users\Vipper\documents\visual studio 2013\Projects\NganHang\NganHang\obj\Debug\NganHang.DangKy.resources
 C:\Users\Vipper\documents\visual studio 2013\Projects\NganHang\NganHang\obj\Debug\NganHang.QuanLyKhacHang.resources
 C:\Users\Vipper\Documents\Visual Studio 2013\Projects\NganHang\NganHang\obj\Debug\NganHang.DoiMaPin.resources
+C:\Users\Vipper\Desktop\Tester\NganHang\obj\Debug\NganHang.exe
+C:\Users\Vipper\Desktop\Tester\NganHang\obj\Debug\NganHang.pdb
+C:\Users\Vipper\Desktop\Tester\NganHang\bin\Debug\NganHang.exe
+C:\Users\Vipper\Desktop\Tester\NganHang\bin\Debug\NganHang.pdb
+C:\Users\Vipper\Desktop\Tester\NganHang\obj\Debug\NganHang.csprojResolveAssemblyReference.cache
+C:\Users\Vipper\Desktop\Tester\NganHang\obj\Debug\NganHang.ChuyenTien.resources
+C:\Users\Vipper\Desktop\Tester\NganHang\obj\Debug\NganHang.DangKy.resources
+C:\Users\Vipper\Desktop\Tester\NganHang\obj\Debug\NganHang.DangNhap.resources
+C:\Users\Vipper\Desktop\Tester\NganHang\obj\Debug\NganHang.DoiMaPin.resources
+C:\Users\Vipper\Desktop\Tester\NganHang\obj\Debug\NganHang.GuiTien.resources
+C:\Users\Vipper\Desktop\Tester\NganHang\obj\Debug\NganHang.Properties.Resources.resources
+C:\Users\Vipper\Desktop\Tester\NganHang\obj\Debug\NganHang.QuanLyKhacHang.resources
+C:\Users\Vipper\Desktop\Tester\NganHang\obj\Debug\NganHang.RutTien.resources
+C:\Users\Vipper\Desktop\Tester\NganHang\obj\Debug\NganHang.ThongTinTaiKhoan.resources
+C:\Users\Vipper\Desktop\Tester\NganHang\obj\Debug\NganHang.TrangChinh.resources
+C:\Users\Vipper\Desktop\Tester\NganHang\obj\Debug\NganHang.csproj.GenerateResource.Cache
+C:\Users\Vipper\Desktop\NganHang\NganHang\obj\Debug\NganHang.exe
+C:\Users\Vipper\Desktop\NganHang\NganHang\obj\Debug\NganHang.pdb
+C:\Users\Vipper\Desktop\NganHang\NganHang\bin\Debug\NganHang.exe
+C:\Users\Vipper\Desktop\NganHang\NganHang\bin\Debug\NganHang.pdb
+C:\Users\Vipper\Desktop\NganHang\NganHang\obj\Debug\NganHang.csprojResolveAssemblyReference.cache
+C:\Users\Vipper\Desktop\NganHang\NganHang\obj\Debug\NganHang.ChuyenTien.resources
+C:\Users\Vipper\Desktop\NganHang\NganHang\obj\Debug\NganHang.DangKy.resources
+C:\Users\Vipper\Desktop\NganHang\NganHang\obj\Debug\NganHang.DangNhap.resources
+C:\Users\Vipper\Desktop\NganHang\NganHang\obj\Debug\NganHang.DoiMaPin.resources
+C:\Users\Vipper\Desktop\NganHang\NganHang\obj\Debug\NganHang.GuiTien.resources
+C:\Users\Vipper\Desktop\NganHang\NganHang\obj\Debug\NganHang.Properties.Resources.resources
+C:\Users\Vipper\Desktop\NganHang\NganHang\obj\Debug\NganHang.QuanLyKhacHang.resources
+C:\Users\Vipper\Desktop\NganHang\NganHang\obj\Debug\NganHang.RutTien.resources
+C:\Users\Vipper\Desktop\NganHang\NganHang\obj\Debug\NganHang.ThongTinTaiKhoan.resources
+C:\Users\Vipper\Desktop\NganHang\NganHang\obj\Debug\NganHang.TrangChinh.resources
+C:\Users\Vipper\Desktop\NganHang\NganHang\obj\Debug\NganHang.csproj.GenerateResource.Cache

@@ -122,7 +122,7 @@
             this.btThoat.TabIndex = 24;
             this.btThoat.Text = "Thoát";
             this.btThoat.UseVisualStyleBackColor = true;
-          
+            
             // 
             // btRut
             // 
@@ -178,7 +178,7 @@
             this.Name = "RutTien";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RutTien";
-           
+          
             this.ResumeLayout(false);
             this.PerformLayout();
 
