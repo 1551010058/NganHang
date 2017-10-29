@@ -83,6 +83,31 @@ namespace NganHang
                     Loi8.Text = " * ";
                     Loi7.Text = null;
                 }
+                else if (kiemtrakitu(txtTenDangNhap.Text) == false)
+                {
+                    MessageBox.Show(" Có Ký tự đặt biệt ở Tên Đăng Nhập ", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    txtTenDangNhap.Focus();
+                }
+                else if (kiemtrakitu(txtMatKhau.Text) == false)
+                {
+                    MessageBox.Show(" Có Ký tự đặt biệt ở Mật Khẩu ", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    txtMatKhau.Focus();
+                }
+                else if (kiemtrakitu(txtHo.Text) == false)
+                {
+                    MessageBox.Show(" Có Ký tự đặt biệt ở Họ ", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    txtHo.Focus();
+                }
+                else if (kiemtrakitu(txtTen.Text) == false)
+                {
+                    MessageBox.Show(" Có Ký tự đặt biệt ở Ten ", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    txtTen.Focus();
+                }
+                else if (kiemtrakitu(txtDiaChi.Text) == false)
+                {
+                    MessageBox.Show(" Có Ký tự đặt biệt ở Địa Chỉ ", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    txtDiaChi.Focus();
+                }
                 else if (txtTenDangNhap.Text == "" || txtMatKhau.Text == "" || txtHo.Text == "" || txtTen.Text == "" || txtNgaySinh.Text == "" ||
                 txtSDT.Text == "" || txtDiaChi.Text == "" || txtCMND.Text == "")
                 {
@@ -197,7 +222,25 @@ namespace NganHang
                 this.Close();
             return base.ProcessDialogKey(keyData);
         }
+        // Hàm Ktra ký tự đặt biệt 
+        string chuoidung = "1234567890_QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasd fghjklzxcvbnm";//Các kí tự đang nhập
+        private bool kiemtrakitu(string chuoiCanKiemTra)
+        {
+            foreach (char kiTu in chuoiCanKiemTra)
+            {
+                bool dung = false;
 
+                foreach (char kitu2 in chuoidung)
+                {
+                    if (kiTu == kitu2)
+                        dung = true;
+                }
+                if (dung == false) return false;
+            }
+
+
+            return true;
+        }
        
     }
 }
