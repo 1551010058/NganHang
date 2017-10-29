@@ -13,7 +13,7 @@ namespace NganHang
 {
     public partial class ChuyenTien : Form
     {
-        SqlConnection ketnoi = new SqlConnection(@"Data Source=DESKTOP-FPNJFC5;Initial Catalog=NganHang;Integrated Security=True");
+        SqlConnection ketnoi = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Vipper\Desktop\NganHang\Database\NganHang.mdf;Integrated Security=True;Connect Timeout=30");
         public static string user3 = "";
         int tienbengui, tongtienbennhan = 0, tienchuyen = 0, tongtienbengui = 0;
         int thegui;
