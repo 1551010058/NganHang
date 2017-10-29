@@ -137,7 +137,7 @@
             this.btChuyenTien.TabIndex = 22;
             this.btChuyenTien.Text = "Chuyển Tiền";
             this.btChuyenTien.UseVisualStyleBackColor = true;
-           
+            this.btChuyenTien.Click += new System.EventHandler(this.btChuyenTien_Click);
             // 
             // btThoat
             // 
@@ -149,7 +149,7 @@
             this.btThoat.TabIndex = 23;
             this.btThoat.Text = "Thoát";
             this.btThoat.UseVisualStyleBackColor = true;
-           
+            this.btThoat.Click += new System.EventHandler(this.btThoat_Click);
             // 
             // ChuyenTien
             // 

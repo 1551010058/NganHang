@@ -105,7 +105,7 @@
             this.btGui.TabIndex = 20;
             this.btGui.Text = "Gửi";
             this.btGui.UseVisualStyleBackColor = true;
-            
+            this.btGui.Click += new System.EventHandler(this.btGui_Click);
             // 
             // label2
             // 
@@ -130,7 +130,7 @@
             this.btThoat.TabIndex = 22;
             this.btThoat.Text = "Thoát";
             this.btThoat.UseVisualStyleBackColor = true;
-          
+            this.btThoat.Click += new System.EventHandler(this.btThoat_Click);
             // 
             // GuiTien
             // 
