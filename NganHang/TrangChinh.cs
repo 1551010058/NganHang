@@ -13,6 +13,11 @@ namespace NganHang
     public partial class TrangChinh : Form
     {
         DangNhap dn = new DangNhap();
+        ThongTinTaiKhoan tk = new ThongTinTaiKhoan();
+        GuiTien gt = new GuiTien();
+        ChuyenTien ct = new ChuyenTien();
+        RutTien rt = new RutTien();
+        QuanLyKhacHang ql = new QuanLyKhacHang();
         SqlConnection ketnoi = new SqlConnection(@"Data Source=DESKTOP-FPNJFC5;Initial Catalog=NganHang;Integrated Security=True");
         public TrangChinh()
         {
@@ -28,8 +33,8 @@ namespace NganHang
             string ho = (string)command2.ExecuteScalar();
             SqlCommand command1 = new SqlCommand("select MaQuyen from KhachHang where TenDangNhap='" + user + "'", ketnoi);
             string ma = (string)command1.ExecuteScalar();
-            hien.Text = " Xin Chào " +ho.ToString()+" "+ hoten.ToString();
-            if(ma=="Admin")
+            hien.Text = " Xin Chào " + ho.ToString() + " " + hoten.ToString();
+            if (ma == "Admin")
             {
                 QuanLy.Enabled = true;
             }
@@ -39,41 +44,40 @@ namespace NganHang
                 QuanLy.Visible = false;
             }
         }
-
+        //Đóng trang chính
         private void button5_Click(object sender, EventArgs e)
         {
             dn.Show();
-            //user = null;
+            tk.Close();
+            gt.Close();
+            ct.Close();
+            rt.Close();
+            ql.Close();
             this.Close();
         }
 
         private void TTTaiKhoan_Click(object sender, EventArgs e)
         {
-            ThongTinTaiKhoan tk = new ThongTinTaiKhoan();
             tk.Show();
         }
-
+        //Gửi Tiền
         private void button2_Click(object sender, EventArgs e)
         {
-            GuiTien gt = new GuiTien();
             gt.Show();
         }
-
+        //chuyen Tiền
         private void button3_Click(object sender, EventArgs e)
         {
-            ChuyenTien ct = new ChuyenTien();
             ct.Show();
         }
-
+        //Rút Tiền
         private void button4_Click(object sender, EventArgs e)
         {
-            RutTien rt = new RutTien();
             rt.Show();
         }
-
+        //Quản Lý
         private void QuanLy_Click(object sender, EventArgs e)
         {
-            QuanLyKhacHang ql = new QuanLyKhacHang();
             ql.Show();
 
         }
