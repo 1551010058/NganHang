@@ -117,7 +117,7 @@
             this.btthoat.TabIndex = 12;
             this.btthoat.Text = "Thoát";
             this.btthoat.UseVisualStyleBackColor = true;
-           
+            this.btthoat.Click += new System.EventHandler(this.btthoat_Click);
             // 
             // HovaTen
             // 
@@ -199,7 +199,7 @@
             this.button1.TabIndex = 20;
             this.button1.Text = "Đổi mã pin";
             this.button1.UseVisualStyleBackColor = true;
-            
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label8
             // 
