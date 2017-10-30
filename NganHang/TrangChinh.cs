@@ -63,21 +63,25 @@ namespace NganHang
         //Gửi Tiền
         private void button2_Click(object sender, EventArgs e)
         {
+            gt = new GuiTien();
             gt.Show();
         }
         //chuyen Tiền
         private void button3_Click(object sender, EventArgs e)
         {
+            ct = new ChuyenTien();
             ct.Show();
         }
         //Rút Tiền
         private void button4_Click(object sender, EventArgs e)
         {
+            rt = new RutTien();
             rt.Show();
         }
         //Quản Lý
         private void QuanLy_Click(object sender, EventArgs e)
         {
+            ql = new QuanLyKhacHang();
             ql.Show();
 
         }

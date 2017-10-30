@@ -59,10 +59,10 @@
             this.Loi8 = new System.Windows.Forms.Label();
             this.Loi9 = new System.Windows.Forms.Label();
             this.Loi = new System.Windows.Forms.Label();
-            this.txtSDT = new System.Windows.Forms.MaskedTextBox();
-            this.txtCMND = new System.Windows.Forms.MaskedTextBox();
             this.txtGioiTinh = new System.Windows.Forms.ComboBox();
             this.txtNgaySinh = new System.Windows.Forms.DateTimePicker();
+            this.txtCMND = new System.Windows.Forms.TextBox();
+            this.txtSDT = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -337,24 +337,6 @@
             this.Loi.Size = new System.Drawing.Size(29, 26);
             this.Loi.TabIndex = 51;
             // 
-            // txtSDT
-            // 
-            this.txtSDT.Location = new System.Drawing.Point(157, 267);
-            this.txtSDT.Mask = "99990000000";
-            this.txtSDT.Name = "txtSDT";
-            this.txtSDT.PromptChar = ' ';
-            this.txtSDT.Size = new System.Drawing.Size(341, 29);
-            this.txtSDT.TabIndex = 29;
-            // 
-            // txtCMND
-            // 
-            this.txtCMND.Location = new System.Drawing.Point(157, 302);
-            this.txtCMND.Mask = "999900000000";
-            this.txtCMND.Name = "txtCMND";
-            this.txtCMND.PromptChar = ' ';
-            this.txtCMND.Size = new System.Drawing.Size(341, 29);
-            this.txtCMND.TabIndex = 30;
-            // 
             // txtGioiTinh
             // 
             this.txtGioiTinh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -375,16 +357,32 @@
             this.txtNgaySinh.Size = new System.Drawing.Size(341, 29);
             this.txtNgaySinh.TabIndex = 27;
             // 
+            // txtCMND
+            // 
+            this.txtCMND.Location = new System.Drawing.Point(157, 270);
+            this.txtCMND.Name = "txtCMND";
+            this.txtCMND.Size = new System.Drawing.Size(341, 29);
+            this.txtCMND.TabIndex = 55;
+            this.txtCMND.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCMND_KeyPress);
+            // 
+            // txtSDT
+            // 
+            this.txtSDT.Location = new System.Drawing.Point(157, 305);
+            this.txtSDT.Name = "txtSDT";
+            this.txtSDT.Size = new System.Drawing.Size(341, 29);
+            this.txtSDT.TabIndex = 54;
+            this.txtSDT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCMND_KeyPress);
+            // 
             // DangKy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(545, 494);
-            this.Controls.Add(this.txtNgaySinh);
-            this.Controls.Add(this.txtGioiTinh);
             this.Controls.Add(this.txtCMND);
             this.Controls.Add(this.txtSDT);
+            this.Controls.Add(this.txtNgaySinh);
+            this.Controls.Add(this.txtGioiTinh);
             this.Controls.Add(this.Loi);
             this.Controls.Add(this.Loi9);
             this.Controls.Add(this.Loi8);
@@ -460,9 +458,9 @@
         private System.Windows.Forms.Label Loi8;
         private System.Windows.Forms.Label Loi9;
         private System.Windows.Forms.Label Loi;
-        private System.Windows.Forms.MaskedTextBox txtSDT;
-        private System.Windows.Forms.MaskedTextBox txtCMND;
         private System.Windows.Forms.ComboBox txtGioiTinh;
         private System.Windows.Forms.DateTimePicker txtNgaySinh;
+        private System.Windows.Forms.TextBox txtCMND;
+        private System.Windows.Forms.TextBox txtSDT;
     }
 }
