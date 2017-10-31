@@ -62,3 +62,5 @@ C:\Users\LEANH\Desktop\NganHang\NganHang\obj\Debug\NganHang.RutTien.resources
 C:\Users\LEANH\Desktop\NganHang\NganHang\obj\Debug\NganHang.ThongTinTaiKhoan.resources
 C:\Users\LEANH\Desktop\NganHang\NganHang\obj\Debug\NganHang.TrangChinh.resources
 C:\Users\LEANH\Desktop\NganHang\NganHang\obj\Debug\NganHang.csproj.GenerateResource.Cache
+C:\Users\root\Desktop\NganHang\NganHang\obj\Debug\NganHang.exe
+C:\Users\root\Desktop\NganHang\NganHang\obj\Debug\NganHang.pdb
