@@ -4,10 +4,10 @@
 Giúp cho công việc gửi tiền của khách hàng thuận tiện và an toàn hơn.
 
 ## Các chức năng của hệ thống:
-- Đăng Ký
-- Đăng nhập
+- Đăng ký.
+- Đăng nhập.
 - Kiểm tra tài khoản.
-- Gửi tiền
+- Gửi tiền.
 - Rút tiền.
 
 ## Danh sách thành viên
