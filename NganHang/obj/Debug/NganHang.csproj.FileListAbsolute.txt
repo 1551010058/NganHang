@@ -30,35 +30,69 @@ C:\Users\Vipper\Desktop\Tester\NganHang\obj\Debug\NganHang.RutTien.resources
 C:\Users\Vipper\Desktop\Tester\NganHang\obj\Debug\NganHang.ThongTinTaiKhoan.resources
 C:\Users\Vipper\Desktop\Tester\NganHang\obj\Debug\NganHang.TrangChinh.resources
 C:\Users\Vipper\Desktop\Tester\NganHang\obj\Debug\NganHang.csproj.GenerateResource.Cache
-C:\Users\Vipper\Desktop\NganHang\NganHang\obj\Debug\NganHang.exe
-C:\Users\Vipper\Desktop\NganHang\NganHang\obj\Debug\NganHang.pdb
-C:\Users\Vipper\Desktop\NganHang\NganHang\bin\Debug\NganHang.exe
-C:\Users\Vipper\Desktop\NganHang\NganHang\bin\Debug\NganHang.pdb
-C:\Users\Vipper\Desktop\NganHang\NganHang\obj\Debug\NganHang.csprojResolveAssemblyReference.cache
-C:\Users\Vipper\Desktop\NganHang\NganHang\obj\Debug\NganHang.ChuyenTien.resources
-C:\Users\Vipper\Desktop\NganHang\NganHang\obj\Debug\NganHang.DangKy.resources
-C:\Users\Vipper\Desktop\NganHang\NganHang\obj\Debug\NganHang.DangNhap.resources
-C:\Users\Vipper\Desktop\NganHang\NganHang\obj\Debug\NganHang.DoiMaPin.resources
-C:\Users\Vipper\Desktop\NganHang\NganHang\obj\Debug\NganHang.GuiTien.resources
-C:\Users\Vipper\Desktop\NganHang\NganHang\obj\Debug\NganHang.Properties.Resources.resources
-C:\Users\Vipper\Desktop\NganHang\NganHang\obj\Debug\NganHang.QuanLyKhacHang.resources
-C:\Users\Vipper\Desktop\NganHang\NganHang\obj\Debug\NganHang.RutTien.resources
-C:\Users\Vipper\Desktop\NganHang\NganHang\obj\Debug\NganHang.ThongTinTaiKhoan.resources
-C:\Users\Vipper\Desktop\NganHang\NganHang\obj\Debug\NganHang.TrangChinh.resources
-C:\Users\Vipper\Desktop\NganHang\NganHang\obj\Debug\NganHang.csproj.GenerateResource.Cache
-C:\Users\LEANH\Desktop\NganHang\NganHang\obj\Debug\NganHang.exe
-C:\Users\LEANH\Desktop\NganHang\NganHang\obj\Debug\NganHang.pdb
-C:\Users\LEANH\Desktop\NganHang\NganHang\bin\Debug\NganHang.exe
-C:\Users\LEANH\Desktop\NganHang\NganHang\bin\Debug\NganHang.pdb
-C:\Users\LEANH\Desktop\NganHang\NganHang\obj\Debug\NganHang.csprojResolveAssemblyReference.cache
-C:\Users\LEANH\Desktop\NganHang\NganHang\obj\Debug\NganHang.ChuyenTien.resources
-C:\Users\LEANH\Desktop\NganHang\NganHang\obj\Debug\NganHang.DangKy.resources
-C:\Users\LEANH\Desktop\NganHang\NganHang\obj\Debug\NganHang.DangNhap.resources
-C:\Users\LEANH\Desktop\NganHang\NganHang\obj\Debug\NganHang.DoiMaPin.resources
-C:\Users\LEANH\Desktop\NganHang\NganHang\obj\Debug\NganHang.GuiTien.resources
-C:\Users\LEANH\Desktop\NganHang\NganHang\obj\Debug\NganHang.Properties.Resources.resources
-C:\Users\LEANH\Desktop\NganHang\NganHang\obj\Debug\NganHang.QuanLyKhacHang.resources
-C:\Users\LEANH\Desktop\NganHang\NganHang\obj\Debug\NganHang.RutTien.resources
-C:\Users\LEANH\Desktop\NganHang\NganHang\obj\Debug\NganHang.ThongTinTaiKhoan.resources
-C:\Users\LEANH\Desktop\NganHang\NganHang\obj\Debug\NganHang.TrangChinh.resources
-C:\Users\LEANH\Desktop\NganHang\NganHang\obj\Debug\NganHang.csproj.GenerateResource.Cache
+C:\Users\Vipper\Desktop\Game\Tester\NganHang\obj\Debug\NganHang.exe
+C:\Users\Vipper\Desktop\Game\Tester\NganHang\obj\Debug\NganHang.pdb
+C:\Users\Vipper\Desktop\Game\Tester\NganHang\bin\Debug\NganHang.exe
+C:\Users\Vipper\Desktop\Game\Tester\NganHang\bin\Debug\NganHang.pdb
+C:\Users\Vipper\Desktop\Game\Tester\NganHang\obj\Debug\NganHang.csprojResolveAssemblyReference.cache
+C:\Users\Vipper\Desktop\Game\Tester\NganHang\obj\Debug\NganHang.ChuyenTien.resources
+C:\Users\Vipper\Desktop\Game\Tester\NganHang\obj\Debug\NganHang.DangKy.resources
+C:\Users\Vipper\Desktop\Game\Tester\NganHang\obj\Debug\NganHang.DangNhap.resources
+C:\Users\Vipper\Desktop\Game\Tester\NganHang\obj\Debug\NganHang.DoiMaPin.resources
+C:\Users\Vipper\Desktop\Game\Tester\NganHang\obj\Debug\NganHang.GuiTien.resources
+C:\Users\Vipper\Desktop\Game\Tester\NganHang\obj\Debug\NganHang.Properties.Resources.resources
+C:\Users\Vipper\Desktop\Game\Tester\NganHang\obj\Debug\NganHang.QuanLyKhacHang.resources
+C:\Users\Vipper\Desktop\Game\Tester\NganHang\obj\Debug\NganHang.RutTien.resources
+C:\Users\Vipper\Desktop\Game\Tester\NganHang\obj\Debug\NganHang.ThongTinTaiKhoan.resources
+C:\Users\Vipper\Desktop\Game\Tester\NganHang\obj\Debug\NganHang.TrangChinh.resources
+C:\Users\Vipper\Desktop\Game\Tester\NganHang\obj\Debug\NganHang.csproj.GenerateResource.Cache
+C:\Users\Vipper\Desktop\Game\Tester\NganHang\bin\Debug\NganHang.exe.config
+C:\Users\Vipper\Desktop\Game\Tester\NganHang\bin\Debug\NganHang.mdf
+C:\Users\Vipper\Desktop\Game\Tester\NganHang\bin\Debug\NganHang_log.ldf
+C:\Users\Vipper\Desktop\Game\Tester\NganHang\obj\Debug\NganHang.HieuUng.resources
+E:\Tester\NganHang\bin\Debug\NganHang.exe.config
+E:\Tester\NganHang\obj\Debug\NganHang.exe
+E:\Tester\NganHang\obj\Debug\NganHang.pdb
+E:\Tester\NganHang\bin\Debug\NganHang.exe
+E:\Tester\NganHang\bin\Debug\NganHang.pdb
+E:\Tester\NganHang\obj\Debug\NganHang.csprojResolveAssemblyReference.cache
+E:\Tester\NganHang\obj\Debug\NganHang.ChuyenTien.resources
+E:\Tester\NganHang\obj\Debug\NganHang.DangKy.resources
+E:\Tester\NganHang\obj\Debug\NganHang.DangNhap.resources
+E:\Tester\NganHang\obj\Debug\NganHang.DoiMaPin.resources
+E:\Tester\NganHang\obj\Debug\NganHang.GuiTien.resources
+E:\Tester\NganHang\obj\Debug\NganHang.HieuUng.resources
+E:\Tester\NganHang\obj\Debug\NganHang.Properties.Resources.resources
+E:\Tester\NganHang\obj\Debug\NganHang.QuanLyKhacHang.resources
+E:\Tester\NganHang\obj\Debug\NganHang.RutTien.resources
+E:\Tester\NganHang\obj\Debug\NganHang.ThongTinTaiKhoan.resources
+E:\Tester\NganHang\obj\Debug\NganHang.TrangChinh.resources
+E:\Tester\NganHang\obj\Debug\NganHang.csproj.GenerateResource.Cache
+E:\Tester\NganHang\bin\Debug\NganHang1.mdf
+E:\Tester\NganHang\bin\Debug\NganHang1_log.ldf
+E:\Tester - Copy\NganHang\bin\Debug\NganHang.exe.config
+E:\Tester - Copy\NganHang\obj\Debug\NganHang.exe
+E:\Tester - Copy\NganHang\obj\Debug\NganHang.pdb
+E:\Tester - Copy\NganHang\bin\Debug\NganHang1.mdf
+E:\Tester - Copy\NganHang\bin\Debug\NganHang1_log.ldf
+E:\Tester - Copy\NganHang\bin\Debug\NganHang.exe
+E:\Tester - Copy\NganHang\bin\Debug\NganHang.pdb
+E:\Tester - Copy\NganHang\obj\Debug\NganHang.csprojResolveAssemblyReference.cache
+E:\Tester - Copy\NganHang\obj\Debug\NganHang.ChuyenTien.resources
+E:\Tester - Copy\NganHang\obj\Debug\NganHang.DangKy.resources
+E:\Tester - Copy\NganHang\obj\Debug\NganHang.DangNhap.resources
+E:\Tester - Copy\NganHang\obj\Debug\NganHang.DoiMaPin.resources
+E:\Tester - Copy\NganHang\obj\Debug\NganHang.GuiTien.resources
+E:\Tester - Copy\NganHang\obj\Debug\NganHang.HieuUng.resources
+E:\Tester - Copy\NganHang\obj\Debug\NganHang.Properties.Resources.resources
+E:\Tester - Copy\NganHang\obj\Debug\NganHang.QuanLyKhacHang.resources
+E:\Tester - Copy\NganHang\obj\Debug\NganHang.RutTien.resources
+E:\Tester - Copy\NganHang\obj\Debug\NganHang.ThongTinTaiKhoan.resources
+E:\Tester - Copy\NganHang\obj\Debug\NganHang.TrangChinh.resources
+E:\Tester - Copy\NganHang\obj\Debug\NganHang.csproj.GenerateResource.Cache
+E:\Tester - Copy\NganHang\obj\Debug\NganHang.csproj.ResolveComReference.cache
+C:\Users\Vipper\Desktop\Tester\NganHang\bin\Debug\NganHang.exe.config
+C:\Users\Vipper\Desktop\Tester\NganHang\obj\Debug\NganHang.csproj.ResolveComReference.cache
+C:\Users\Vipper\Desktop\Tester\NganHang\bin\Debug\NganHang1.mdf
+C:\Users\Vipper\Desktop\Tester\NganHang\bin\Debug\NganHang1_log.ldf
+C:\Users\Vipper\Desktop\Tester\NganHang\obj\Debug\NganHang.HieuUng.resources

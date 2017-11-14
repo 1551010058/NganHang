@@ -28,10 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QuanLyKhacHang));
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtCMND = new System.Windows.Forms.MaskedTextBox();
+            this.txtCMND = new System.Windows.Forms.TextBox();
+            this.txtSDT = new System.Windows.Forms.TextBox();
             this.Loi12 = new System.Windows.Forms.Label();
             this.Loi11 = new System.Windows.Forms.Label();
             this.Loi10 = new System.Windows.Forms.Label();
@@ -54,7 +57,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.cboGioiTinh = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtSDT = new System.Windows.Forms.MaskedTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.txtHo = new System.Windows.Forms.TextBox();
@@ -69,16 +71,34 @@
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataDanhSach = new System.Windows.Forms.DataGridView();
+            this.maTheDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gioiTinhDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ngaySinhDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sDTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cMNDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.diaChiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenDangNhapDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.matKhauDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tienDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.maQuyenDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.nganHang1DataSet = new NganHang.NganHang1DataSet();
             this.txtSearchmathe = new System.Windows.Forms.TextBox();
+            this.btprint = new System.Windows.Forms.Button();
             this.Clear = new System.Windows.Forms.Button();
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnThemmoi = new System.Windows.Forms.Button();
+            this.khachHangTableAdapter = new NganHang.NganHang1DataSetTableAdapters.KhachHangTableAdapter();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataDanhSach)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nganHang1DataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -89,7 +109,7 @@
             this.label1.ForeColor = System.Drawing.Color.Red;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(825, 49);
+            this.label1.Size = new System.Drawing.Size(839, 49);
             this.label1.TabIndex = 6;
             this.label1.Text = "Thông Tin Khách Hàng";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -97,6 +117,7 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.txtCMND);
+            this.groupBox1.Controls.Add(this.txtSDT);
             this.groupBox1.Controls.Add(this.Loi12);
             this.groupBox1.Controls.Add(this.Loi11);
             this.groupBox1.Controls.Add(this.Loi10);
@@ -119,7 +140,6 @@
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.cboGioiTinh);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.txtSDT);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.txtHo);
@@ -143,13 +163,23 @@
             // 
             // txtCMND
             // 
-            this.txtCMND.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCMND.ForeColor = System.Drawing.Color.Black;
+            this.txtCMND.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtCMND.Location = new System.Drawing.Point(142, 124);
-            this.txtCMND.Mask = "999900000000";
             this.txtCMND.Name = "txtCMND";
-            this.txtCMND.Size = new System.Drawing.Size(181, 22);
-            this.txtCMND.TabIndex = 5;
+            this.txtCMND.ShortcutsEnabled = false;
+            this.txtCMND.Size = new System.Drawing.Size(182, 22);
+            this.txtCMND.TabIndex = 76;
+            this.txtCMND.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSearchmathe_KeyPress);
+            // 
+            // txtSDT
+            // 
+            this.txtSDT.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtSDT.Location = new System.Drawing.Point(142, 96);
+            this.txtSDT.Name = "txtSDT";
+            this.txtSDT.ShortcutsEnabled = false;
+            this.txtSDT.Size = new System.Drawing.Size(182, 22);
+            this.txtSDT.TabIndex = 75;
+            this.txtSDT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSearchmathe_KeyPress);
             // 
             // Loi12
             // 
@@ -270,9 +300,11 @@
             this.txtmoney.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtmoney.Location = new System.Drawing.Point(480, 95);
             this.txtmoney.Name = "txtmoney";
+            this.txtmoney.ShortcutsEnabled = false;
             this.txtmoney.Size = new System.Drawing.Size(182, 22);
             this.txtmoney.TabIndex = 10;
             this.txtmoney.Text = "100000";
+            this.txtmoney.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtmoney_KeyPress);
             // 
             // label12
             // 
@@ -290,6 +322,7 @@
             this.txtDiaChi.ForeColor = System.Drawing.Color.Black;
             this.txtDiaChi.Location = new System.Drawing.Point(142, 152);
             this.txtDiaChi.Name = "txtDiaChi";
+            this.txtDiaChi.ShortcutsEnabled = false;
             this.txtDiaChi.Size = new System.Drawing.Size(181, 22);
             this.txtDiaChi.TabIndex = 6;
             // 
@@ -310,6 +343,7 @@
             this.txtTen.ForeColor = System.Drawing.Color.Black;
             this.txtTen.Location = new System.Drawing.Point(142, 41);
             this.txtTen.Name = "txtTen";
+            this.txtTen.ShortcutsEnabled = false;
             this.txtTen.Size = new System.Drawing.Size(182, 22);
             this.txtTen.TabIndex = 2;
             // 
@@ -349,16 +383,6 @@
             this.label7.TabIndex = 54;
             this.label7.Text = "Giới tính:";
             // 
-            // txtSDT
-            // 
-            this.txtSDT.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSDT.ForeColor = System.Drawing.Color.Black;
-            this.txtSDT.Location = new System.Drawing.Point(143, 96);
-            this.txtSDT.Mask = "99990000000";
-            this.txtSDT.Name = "txtSDT";
-            this.txtSDT.Size = new System.Drawing.Size(181, 22);
-            this.txtSDT.TabIndex = 4;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -387,6 +411,7 @@
             this.txtHo.ForeColor = System.Drawing.Color.Black;
             this.txtHo.Location = new System.Drawing.Point(142, 15);
             this.txtHo.Name = "txtHo";
+            this.txtHo.ShortcutsEnabled = false;
             this.txtHo.Size = new System.Drawing.Size(182, 22);
             this.txtHo.TabIndex = 1;
             // 
@@ -429,7 +454,7 @@
             this.txtagainpasswork.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtagainpasswork.Location = new System.Drawing.Point(480, 67);
             this.txtagainpasswork.Name = "txtagainpasswork";
-            this.txtagainpasswork.PasswordChar = '*';
+            this.txtagainpasswork.ShortcutsEnabled = false;
             this.txtagainpasswork.Size = new System.Drawing.Size(182, 22);
             this.txtagainpasswork.TabIndex = 9;
             // 
@@ -438,7 +463,7 @@
             this.txtpasswork.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtpasswork.Location = new System.Drawing.Point(480, 41);
             this.txtpasswork.Name = "txtpasswork";
-            this.txtpasswork.PasswordChar = '*';
+            this.txtpasswork.ShortcutsEnabled = false;
             this.txtpasswork.Size = new System.Drawing.Size(182, 22);
             this.txtpasswork.TabIndex = 8;
             // 
@@ -493,20 +518,138 @@
             // 
             // dataDanhSach
             // 
+            this.dataDanhSach.AutoGenerateColumns = false;
             this.dataDanhSach.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dataDanhSach.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataDanhSach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataDanhSach.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.maTheDataGridViewTextBoxColumn,
+            this.hoDataGridViewTextBoxColumn,
+            this.tenDataGridViewTextBoxColumn,
+            this.gioiTinhDataGridViewTextBoxColumn,
+            this.ngaySinhDataGridViewTextBoxColumn,
+            this.sDTDataGridViewTextBoxColumn,
+            this.cMNDDataGridViewTextBoxColumn,
+            this.diaChiDataGridViewTextBoxColumn,
+            this.tenDangNhapDataGridViewTextBoxColumn,
+            this.matKhauDataGridViewTextBoxColumn,
+            this.tienDataGridViewTextBoxColumn,
+            this.maQuyenDataGridViewTextBoxColumn});
+            this.dataDanhSach.DataSource = this.bindingSource1;
             this.dataDanhSach.Location = new System.Drawing.Point(6, 21);
             this.dataDanhSach.Name = "dataDanhSach";
             this.dataDanhSach.Size = new System.Drawing.Size(704, 177);
             this.dataDanhSach.TabIndex = 0;
+            this.dataDanhSach.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataDanhSach_CellContentClick);
+            // 
+            // maTheDataGridViewTextBoxColumn
+            // 
+            this.maTheDataGridViewTextBoxColumn.DataPropertyName = "MaThe";
+            this.maTheDataGridViewTextBoxColumn.HeaderText = "MaThe";
+            this.maTheDataGridViewTextBoxColumn.Name = "maTheDataGridViewTextBoxColumn";
+            this.maTheDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // hoDataGridViewTextBoxColumn
+            // 
+            this.hoDataGridViewTextBoxColumn.DataPropertyName = "Ho";
+            this.hoDataGridViewTextBoxColumn.HeaderText = "Ho";
+            this.hoDataGridViewTextBoxColumn.Name = "hoDataGridViewTextBoxColumn";
+            // 
+            // tenDataGridViewTextBoxColumn
+            // 
+            this.tenDataGridViewTextBoxColumn.DataPropertyName = "Ten";
+            this.tenDataGridViewTextBoxColumn.HeaderText = "Ten";
+            this.tenDataGridViewTextBoxColumn.Name = "tenDataGridViewTextBoxColumn";
+            // 
+            // gioiTinhDataGridViewTextBoxColumn
+            // 
+            this.gioiTinhDataGridViewTextBoxColumn.DataPropertyName = "GioiTinh";
+            this.gioiTinhDataGridViewTextBoxColumn.HeaderText = "GioiTinh";
+            this.gioiTinhDataGridViewTextBoxColumn.Name = "gioiTinhDataGridViewTextBoxColumn";
+            // 
+            // ngaySinhDataGridViewTextBoxColumn
+            // 
+            this.ngaySinhDataGridViewTextBoxColumn.DataPropertyName = "NgaySinh";
+            this.ngaySinhDataGridViewTextBoxColumn.HeaderText = "NgaySinh";
+            this.ngaySinhDataGridViewTextBoxColumn.Name = "ngaySinhDataGridViewTextBoxColumn";
+            // 
+            // sDTDataGridViewTextBoxColumn
+            // 
+            this.sDTDataGridViewTextBoxColumn.DataPropertyName = "SDT";
+            this.sDTDataGridViewTextBoxColumn.HeaderText = "SDT";
+            this.sDTDataGridViewTextBoxColumn.Name = "sDTDataGridViewTextBoxColumn";
+            // 
+            // cMNDDataGridViewTextBoxColumn
+            // 
+            this.cMNDDataGridViewTextBoxColumn.DataPropertyName = "CMND";
+            this.cMNDDataGridViewTextBoxColumn.HeaderText = "CMND";
+            this.cMNDDataGridViewTextBoxColumn.Name = "cMNDDataGridViewTextBoxColumn";
+            // 
+            // diaChiDataGridViewTextBoxColumn
+            // 
+            this.diaChiDataGridViewTextBoxColumn.DataPropertyName = "DiaChi";
+            this.diaChiDataGridViewTextBoxColumn.HeaderText = "DiaChi";
+            this.diaChiDataGridViewTextBoxColumn.Name = "diaChiDataGridViewTextBoxColumn";
+            // 
+            // tenDangNhapDataGridViewTextBoxColumn
+            // 
+            this.tenDangNhapDataGridViewTextBoxColumn.DataPropertyName = "TenDangNhap";
+            this.tenDangNhapDataGridViewTextBoxColumn.HeaderText = "TenDangNhap";
+            this.tenDangNhapDataGridViewTextBoxColumn.Name = "tenDangNhapDataGridViewTextBoxColumn";
+            // 
+            // matKhauDataGridViewTextBoxColumn
+            // 
+            this.matKhauDataGridViewTextBoxColumn.DataPropertyName = "MatKhau";
+            this.matKhauDataGridViewTextBoxColumn.HeaderText = "MatKhau";
+            this.matKhauDataGridViewTextBoxColumn.Name = "matKhauDataGridViewTextBoxColumn";
+            // 
+            // tienDataGridViewTextBoxColumn
+            // 
+            this.tienDataGridViewTextBoxColumn.DataPropertyName = "Tien";
+            dataGridViewCellStyle1.Format = "### ### ### ### VND";
+            dataGridViewCellStyle1.NullValue = "0";
+            this.tienDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle1;
+            this.tienDataGridViewTextBoxColumn.HeaderText = "Tien";
+            this.tienDataGridViewTextBoxColumn.Name = "tienDataGridViewTextBoxColumn";
+            // 
+            // maQuyenDataGridViewTextBoxColumn
+            // 
+            this.maQuyenDataGridViewTextBoxColumn.DataPropertyName = "MaQuyen";
+            this.maQuyenDataGridViewTextBoxColumn.HeaderText = "MaQuyen";
+            this.maQuyenDataGridViewTextBoxColumn.Name = "maQuyenDataGridViewTextBoxColumn";
+            // 
+            // bindingSource1
+            // 
+            this.bindingSource1.DataMember = "KhachHang";
+            this.bindingSource1.DataSource = this.nganHang1DataSet;
+            // 
+            // nganHang1DataSet
+            // 
+            this.nganHang1DataSet.DataSetName = "NganHang1DataSet";
+            this.nganHang1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // txtSearchmathe
             // 
             this.txtSearchmathe.Location = new System.Drawing.Point(729, 60);
             this.txtSearchmathe.Name = "txtSearchmathe";
+            this.txtSearchmathe.ShortcutsEnabled = false;
             this.txtSearchmathe.Size = new System.Drawing.Size(92, 32);
             this.txtSearchmathe.TabIndex = 26;
+            this.txtSearchmathe.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSearchmathe_KeyPress);
+            // 
+            // btprint
+            // 
+            this.btprint.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btprint.ForeColor = System.Drawing.Color.Black;
+            this.btprint.Image = ((System.Drawing.Image)(resources.GetObject("btprint.Image")));
+            this.btprint.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btprint.Location = new System.Drawing.Point(735, 297);
+            this.btprint.Name = "btprint";
+            this.btprint.Size = new System.Drawing.Size(86, 35);
+            this.btprint.TabIndex = 29;
+            this.btprint.Text = "Print";
+            this.btprint.UseVisualStyleBackColor = true;
+            this.btprint.Click += new System.EventHandler(this.btprint_Click);
             // 
             // Clear
             // 
@@ -514,13 +657,13 @@
             this.Clear.ForeColor = System.Drawing.Color.Black;
             this.Clear.Image = ((System.Drawing.Image)(resources.GetObject("Clear.Image")));
             this.Clear.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Clear.Location = new System.Drawing.Point(735, 316);
+            this.Clear.Location = new System.Drawing.Point(735, 348);
             this.Clear.Name = "Clear";
-            this.Clear.Size = new System.Drawing.Size(78, 35);
+            this.Clear.Size = new System.Drawing.Size(86, 35);
             this.Clear.TabIndex = 28;
             this.Clear.Text = "Clear";
             this.Clear.UseVisualStyleBackColor = true;
-        
+            this.Clear.Click += new System.EventHandler(this.Clear_Click);
             // 
             // btnTimKiem
             // 
@@ -530,11 +673,11 @@
             this.btnTimKiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTimKiem.Location = new System.Drawing.Point(735, 105);
             this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.Size = new System.Drawing.Size(78, 32);
+            this.btnTimKiem.Size = new System.Drawing.Size(85, 32);
             this.btnTimKiem.TabIndex = 27;
             this.btnTimKiem.Text = "Xem ";
             this.btnTimKiem.UseVisualStyleBackColor = true;
-           
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // btnThoat
             // 
@@ -542,13 +685,13 @@
             this.btnThoat.ForeColor = System.Drawing.Color.Black;
             this.btnThoat.Image = ((System.Drawing.Image)(resources.GetObject("btnThoat.Image")));
             this.btnThoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThoat.Location = new System.Drawing.Point(735, 374);
+            this.btnThoat.Location = new System.Drawing.Point(735, 398);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(78, 35);
+            this.btnThoat.Size = new System.Drawing.Size(85, 35);
             this.btnThoat.TabIndex = 25;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
-            
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // btnXoa
             // 
@@ -556,13 +699,13 @@
             this.btnXoa.ForeColor = System.Drawing.Color.Black;
             this.btnXoa.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.Image")));
             this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoa.Location = new System.Drawing.Point(735, 257);
+            this.btnXoa.Location = new System.Drawing.Point(734, 246);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(78, 35);
+            this.btnXoa.Size = new System.Drawing.Size(86, 35);
             this.btnXoa.TabIndex = 24;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
-            
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnSua
             // 
@@ -570,13 +713,13 @@
             this.btnSua.ForeColor = System.Drawing.Color.Black;
             this.btnSua.Image = ((System.Drawing.Image)(resources.GetObject("btnSua.Image")));
             this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSua.Location = new System.Drawing.Point(735, 201);
+            this.btnSua.Location = new System.Drawing.Point(735, 197);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(78, 35);
+            this.btnSua.Size = new System.Drawing.Size(86, 35);
             this.btnSua.TabIndex = 23;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
-           
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnThemmoi
             // 
@@ -584,19 +727,24 @@
             this.btnThemmoi.ForeColor = System.Drawing.Color.Black;
             this.btnThemmoi.Image = ((System.Drawing.Image)(resources.GetObject("btnThemmoi.Image")));
             this.btnThemmoi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThemmoi.Location = new System.Drawing.Point(734, 151);
+            this.btnThemmoi.Location = new System.Drawing.Point(734, 148);
             this.btnThemmoi.Name = "btnThemmoi";
-            this.btnThemmoi.Size = new System.Drawing.Size(78, 35);
+            this.btnThemmoi.Size = new System.Drawing.Size(87, 35);
             this.btnThemmoi.TabIndex = 22;
             this.btnThemmoi.Text = "Thêm mới";
             this.btnThemmoi.UseVisualStyleBackColor = true;
-           
+            this.btnThemmoi.Click += new System.EventHandler(this.btnThemmoi_Click);
+            // 
+            // khachHangTableAdapter
+            // 
+            this.khachHangTableAdapter.ClearBeforeFill = true;
             // 
             // QuanLyKhacHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(825, 482);
+            this.ClientSize = new System.Drawing.Size(839, 445);
+            this.Controls.Add(this.btprint);
             this.Controls.Add(this.Clear);
             this.Controls.Add(this.btnTimKiem);
             this.Controls.Add(this.txtSearchmathe);
@@ -614,12 +762,14 @@
             this.Name = "QuanLyKhacHang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QuanLyKhacHang";
-           
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.QuanLyKhacHang_FormClosing);
             this.Load += new System.EventHandler(this.QuanLyKhacHang_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataDanhSach)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nganHang1DataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -639,7 +789,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ComboBox cboGioiTinh;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.MaskedTextBox txtSDT;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtHo;
@@ -672,7 +821,25 @@
         private System.Windows.Forms.Label Loi3;
         private System.Windows.Forms.Label Loi2;
         private System.Windows.Forms.Label Loi1;
-        private System.Windows.Forms.MaskedTextBox txtCMND;
         private System.Windows.Forms.Button Clear;
+        private System.Windows.Forms.TextBox txtCMND;
+        private System.Windows.Forms.TextBox txtSDT;
+        private System.Windows.Forms.Button btprint;
+        private System.Windows.Forms.BindingSource bindingSource1;
+        private NganHang1DataSet nganHang1DataSet;
+        private NganHang1DataSetTableAdapters.KhachHangTableAdapter khachHangTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn maTheDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn hoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tenDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn gioiTinhDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ngaySinhDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sDTDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cMNDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn diaChiDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tenDangNhapDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn matKhauDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tienDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn maQuyenDataGridViewTextBoxColumn;
+        
     }
 }

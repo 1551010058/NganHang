@@ -121,7 +121,7 @@
             this.btLuu.TabIndex = 23;
             this.btLuu.Text = "Lưu thay đổi";
             this.btLuu.UseVisualStyleBackColor = true;
-         
+            this.btLuu.Click += new System.EventHandler(this.btLuu_Click);
             // 
             // button1
             // 
@@ -134,7 +134,7 @@
             this.button1.TabIndex = 24;
             this.button1.Text = "thoát";
             this.button1.UseVisualStyleBackColor = true;
-          
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label5
             // 

@@ -1,0 +1,9 @@
+C:\Users\Vipper\Desktop\Tester\UnitTest\bin\Debug\NganHang1.mdf
+C:\Users\Vipper\Desktop\Tester\UnitTest\bin\Debug\NganHang1_log.ldf
+C:\Users\Vipper\Desktop\Tester\UnitTest\bin\Debug\UnitTest.dll
+C:\Users\Vipper\Desktop\Tester\UnitTest\bin\Debug\UnitTest.pdb
+C:\Users\Vipper\Desktop\Tester\UnitTest\bin\Debug\NganHang.exe
+C:\Users\Vipper\Desktop\Tester\UnitTest\bin\Debug\NganHang.pdb
+C:\Users\Vipper\Desktop\Tester\UnitTest\obj\Debug\UnitTest.csprojResolveAssemblyReference.cache
+C:\Users\Vipper\Desktop\Tester\UnitTest\obj\Debug\UnitTest.dll
+C:\Users\Vipper\Desktop\Tester\UnitTest\obj\Debug\UnitTest.pdb

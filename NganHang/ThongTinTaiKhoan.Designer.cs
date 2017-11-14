@@ -56,7 +56,7 @@
             this.label1.ForeColor = System.Drawing.Color.Red;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(521, 59);
+            this.label1.Size = new System.Drawing.Size(660, 59);
             this.label1.TabIndex = 0;
             this.label1.Text = "Thông Tin Khách Hàng";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -64,7 +64,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(35, 68);
+            this.label2.Location = new System.Drawing.Point(58, 67);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(100, 22);
             this.label2.TabIndex = 1;
@@ -73,7 +73,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(35, 103);
+            this.label3.Location = new System.Drawing.Point(58, 107);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(80, 22);
             this.label3.TabIndex = 2;
@@ -82,7 +82,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(35, 139);
+            this.label4.Location = new System.Drawing.Point(58, 143);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(75, 22);
             this.label4.TabIndex = 5;
@@ -91,7 +91,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(35, 174);
+            this.label5.Location = new System.Drawing.Point(58, 178);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(52, 22);
             this.label5.TabIndex = 6;
@@ -100,7 +100,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(35, 246);
+            this.label6.Location = new System.Drawing.Point(58, 297);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(66, 22);
             this.label6.TabIndex = 10;
@@ -111,7 +111,7 @@
             this.btthoat.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btthoat.Image = ((System.Drawing.Image)(resources.GetObject("btthoat.Image")));
             this.btthoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btthoat.Location = new System.Drawing.Point(273, 331);
+            this.btthoat.Location = new System.Drawing.Point(370, 346);
             this.btthoat.Name = "btthoat";
             this.btthoat.Size = new System.Drawing.Size(127, 41);
             this.btthoat.TabIndex = 12;
@@ -123,7 +123,7 @@
             // 
             this.HovaTen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.HovaTen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.HovaTen.Location = new System.Drawing.Point(141, 59);
+            this.HovaTen.Location = new System.Drawing.Point(175, 63);
             this.HovaTen.Name = "HovaTen";
             this.HovaTen.Size = new System.Drawing.Size(341, 31);
             this.HovaTen.TabIndex = 13;
@@ -133,7 +133,7 @@
             // 
             this.MaThe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.MaThe.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.MaThe.Location = new System.Drawing.Point(141, 94);
+            this.MaThe.Location = new System.Drawing.Point(175, 103);
             this.MaThe.Name = "MaThe";
             this.MaThe.Size = new System.Drawing.Size(341, 31);
             this.MaThe.TabIndex = 14;
@@ -143,7 +143,7 @@
             // 
             this.CMND.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.CMND.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.CMND.Location = new System.Drawing.Point(141, 130);
+            this.CMND.Location = new System.Drawing.Point(175, 139);
             this.CMND.Name = "CMND";
             this.CMND.Size = new System.Drawing.Size(341, 31);
             this.CMND.TabIndex = 15;
@@ -153,7 +153,7 @@
             // 
             this.SDT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.SDT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.SDT.Location = new System.Drawing.Point(141, 165);
+            this.SDT.Location = new System.Drawing.Point(175, 174);
             this.SDT.Name = "SDT";
             this.SDT.Size = new System.Drawing.Size(341, 31);
             this.SDT.TabIndex = 16;
@@ -163,7 +163,7 @@
             // 
             this.SoDu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.SoDu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.SoDu.Location = new System.Drawing.Point(141, 242);
+            this.SoDu.Location = new System.Drawing.Point(175, 253);
             this.SoDu.Name = "SoDu";
             this.SoDu.Size = new System.Drawing.Size(341, 31);
             this.SoDu.TabIndex = 17;
@@ -172,7 +172,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(37, 284);
+            this.label7.Location = new System.Drawing.Point(58, 257);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(78, 22);
             this.label7.TabIndex = 18;
@@ -182,7 +182,7 @@
             // 
             this.DiaChi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.DiaChi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DiaChi.Location = new System.Drawing.Point(141, 280);
+            this.DiaChi.Location = new System.Drawing.Point(175, 293);
             this.DiaChi.Name = "DiaChi";
             this.DiaChi.Size = new System.Drawing.Size(341, 31);
             this.DiaChi.TabIndex = 19;
@@ -193,7 +193,7 @@
             this.button1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(141, 331);
+            this.button1.Location = new System.Drawing.Point(212, 346);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(126, 41);
             this.button1.TabIndex = 20;
@@ -204,7 +204,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(35, 212);
+            this.label8.Location = new System.Drawing.Point(58, 216);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(94, 22);
             this.label8.TabIndex = 21;
@@ -214,7 +214,7 @@
             // 
             this.txtNgaySinh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtNgaySinh.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtNgaySinh.Location = new System.Drawing.Point(141, 203);
+            this.txtNgaySinh.Location = new System.Drawing.Point(175, 212);
             this.txtNgaySinh.Name = "txtNgaySinh";
             this.txtNgaySinh.Size = new System.Drawing.Size(341, 31);
             this.txtNgaySinh.TabIndex = 22;
@@ -225,7 +225,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(521, 375);
+            this.ClientSize = new System.Drawing.Size(660, 412);
             this.Controls.Add(this.txtNgaySinh);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.button1);
@@ -244,7 +244,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.MaximizeBox = false;
             this.Name = "ThongTinTaiKhoan";

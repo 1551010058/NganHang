@@ -12,7 +12,8 @@ namespace NganHang
 {
     public partial class DangKy : Form
     {
-        SqlConnection ketnoi = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Vipper\Desktop\NganHang\Database\NganHang.mdf;Integrated Security=True;Connect Timeout=30");
+        ErrorProvider Error = new ErrorProvider();
+        SqlConnection ketnoi = new SqlConnection(@"Server = .;Database =NganHang1;Integrated Security=True");
         public DangKy()
         {
             InitializeComponent();
@@ -29,104 +30,167 @@ namespace NganHang
         {
             dangky();
         }
+        DungChung DC = new DungChung();
+
         private void dangky()
         {
+            
+            Error.Clear();
             String[] arrDangKy = txtTenDangNhap.Text.Split(' ');
             String[] arrSDT = txtSDT.Text.Split(' ');
             String[] arrmk=txtMatKhau.Text.Split(' ');
             String[] arrcmnd = txtCMND.Text.Split(' ');
-            if (arrDangKy.Count() > 1 || arrSDT.Count() > 1|| arrmk.Count()>1||arrcmnd.Count()>1)
+           
+            if (DC.kiemtratrongchuoi(txtTenDangNhap.Text)==true)
             {
-                MessageBox.Show(" Khong được có khoảng trống ", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(" Không được có khoảng trống ở Tên Đăng Nhập", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Error.SetError(txtTenDangNhap, "a");
+                txtTenDangNhap.Focus();
+            }
+            else if(arrSDT.Count()>1)
+            {
+                MessageBox.Show(" Không được có khoảng trống ở SĐT", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Error.SetError(txtSDT, " a ");
+                txtSDT.Focus();
+            }
+            else if(arrmk.Count()>1)
+            {
+                MessageBox.Show(" Không được có khoảng trống ở mật khẩu ", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Error.SetError(txtMatKhau, " a ");
+                txtMatKhau.Focus();
+            }
+            else if(arrcmnd.Count()>1)
+            {
+                MessageBox.Show(" Không được có khoảng trống ở CMND ", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Error.SetError(txtCMND, " a ");
+                txtCMND.Focus();
             }
             else 
                 //hàm tren kt ten dang nhap ko dc có khoảng trắng
-                if (kiemtrataikhoantontai() == true && kiemtrasdttontai() == true && kiemtraCMNDtontai() == true)
-                {
-                    Loi1.Text = " * ";
-                    Loi7.Text = " * ";
-                    Loi8.Text = " * ";
-                }
-                else if (kiemtrataikhoantontai() == true && kiemtrasdttontai() == true)
-                {
-                    Loi8.Text = null;
-                    Loi1.Text = " * ";
-                    Loi7.Text = " * ";
-                }
-                else if (kiemtrataikhoantontai() == true && kiemtraCMNDtontai() == true)
-                {
-                    Loi7.Text = null;
-                    Loi1.Text = " * ";
-                    Loi8.Text = " * ";
-                }
-                else if (kiemtraCMNDtontai() == true && kiemtraCMNDtontai() == true)
-                {
-                    Loi1.Text = null;
-                    Loi7.Text = " * ";
-                    Loi8.Text = " * ";
-                }
-                else if (kiemtrataikhoantontai() == true)
-                {
-                    Loi7.Text = null;
-                    Loi8.Text = null;
-                    Loi1.Text = " * ";
-                }
-                else if (kiemtrasdttontai() == true)
-                {
-                    Loi1.Text = null;
-                    Loi8.Text = null;
-                    Loi7.Text = " * ";
-                }
-                else if (kiemtraCMNDtontai() == true)
-                {
-                    Loi1.Text = null;
-                    Loi8.Text = " * ";
-                    Loi7.Text = null;
-                }
-                else if (kiemtrakitu(txtTenDangNhap.Text) == false)
-                {
-                    MessageBox.Show(" Có Ký tự đặt biệt ở Tên Đăng Nhập ", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    txtTenDangNhap.Focus();
-                }
-                else if (kiemtrakitu(txtMatKhau.Text) == false)
-                {
-                    MessageBox.Show(" Có Ký tự đặt biệt ở Mật Khẩu ", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    txtMatKhau.Focus();
-                }
-                else if (kiemtrakitu(txtHo.Text) == false)
-                {
-                    MessageBox.Show(" Có Ký tự đặt biệt ở Họ ", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    txtHo.Focus();
-                }
-                else if (kiemtrakitu(txtTen.Text) == false)
-                {
-                    MessageBox.Show(" Có Ký tự đặt biệt ở Ten ", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    txtTen.Focus();
-                }
-                else if (kiemtrakitu(txtDiaChi.Text) == false)
-                {
-                    MessageBox.Show(" Có Ký tự đặt biệt ở Địa Chỉ ", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    txtDiaChi.Focus();
-                }
-                else if (txtTenDangNhap.Text == "" || txtMatKhau.Text == "" || txtHo.Text == "" || txtTen.Text == "" || txtNgaySinh.Text == "" ||
-                txtSDT.Text == "" || txtDiaChi.Text == "" || txtCMND.Text == "")
+                if (DC.KiemTra_Rong(txtTenDangNhap.Text) == false || DC.KiemTra_Rong(txtMatKhau.Text) ==false || DC.KiemTra_Rong(txtHo.Text) == false || DC.KiemTra_Rong(txtTen.Text) == false || DC.KiemTra_Rong(txtNgaySinh.Text) == false ||
+                DC.KiemTra_Rong(txtSDT.Text) == false || DC.KiemTra_Rong(txtDiaChi.Text) == false || DC.KiemTra_Rong(txtCMND.Text) == false || DC.KiemTra_Rong(txtGioiTinh.Text) == false)
                 {
                     MessageBox.Show(" Bạn Chưa Nhập Dử Liệu ", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                else if ((txtSDT.Text.Length < 10 || txtSDT.Text.Length > 11))
-                {
-                    MessageBox.Show(" Số Điện Thoại phải nằm trong khoảng 10 đên 11 số ", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    if (DC.KiemTra_Rong(txtCMND.Text) ==false)
+                    {
+                        Error.SetError(txtCMND, "a");
+                        txtCMND.Focus();
+                    }
+                    if (DC.KiemTra_Rong(txtDiaChi.Text) == false)
+                    {
+                        Error.SetError(txtDiaChi, "a");
+                        txtDiaChi.Focus();
+                    }
+                    if (DC.KiemTra_Rong(txtGioiTinh.Text) == false)
+                    {
+                        Error.SetError(txtGioiTinh, "a");
+                        txtGioiTinh.Focus();
+                    }
+                    if (DC.KiemTra_Rong(txtHo.Text) == false)
+                    {
+                        Error.SetError(txtHo, "a");
+                        txtHo.Focus();
+                    }
+                    if (DC.KiemTra_Rong(txtMatKhau.Text) == false)
+                    {
+                        Error.SetError(txtMatKhau, "a");
+                        txtMatKhau.Focus();
+                    }
+                    if (DC.KiemTra_Rong(txtNgaySinh.Text) == false)
+                    {
+                        Error.SetError(txtNgaySinh, "a");
+                        txtNgaySinh.Focus();
+                    }
+                    if (DC.KiemTra_Rong(txtSDT.Text) == false)
+                    {
+                        Error.SetError(txtSDT, "a");
+                        txtSDT.Focus();
+                    }
+                    if (DC.KiemTra_Rong(txtTen.Text) == false)
+                    {
+                        Error.SetError(txtTen, "a");
+                        txtTen.Focus();
+                    }
+                    if (DC.KiemTra_Rong(txtTenDangNhap.Text) == false)
+                    {
+                        Error.SetError(txtTenDangNhap, "a");
+                        txtTenDangNhap.Focus();
+                    }
+                    if (DC.KiemTra_Rong(txtTien.Text) == false)
+                    {
+                        Error.SetError(txtTien, "a");
+                        txtTien.Focus();
+                    }
 
                 }
-                else if ((txtCMND.Text.Length < 9 || txtCMND.Text.Length > 9) && (txtCMND.Text.Length < 12 || txtCMND.Text.Length > 12))
+                else if (DC.kiemtratontai(txtTenDangNhap.Text) == true || DC.kiemtrasdttontai(txtSDT.Text) == true || DC.kiemtracmndtontai(txtCMND.Text) == true)
                 {
-                    MessageBox.Show(" CMND phải 9 số và 12 số ", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                else if(txtMatKhau.Text.Length <6 || txtMatKhau.Text.Length >=20)
-                {
-                    MessageBox.Show(" Mật khẩu từ 6 ký tự trở lên ", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                else
+
+                    if (DC.kiemtratontai(txtTenDangNhap.Text) == true)
+                    {
+                        Error.SetError(txtTenDangNhap, " a ");
+                        txtTenDangNhap.Focus();
+                    }
+                    if (DC.kiemtrasdttontai(txtSDT.Text) == true)
+                    {
+                        Error.SetError(txtSDT, "a");
+                        txtSDT.Focus();
+                    }
+                    if (DC.kiemtracmndtontai(txtCMND.Text) == true)
+                    {
+                        Error.SetError(txtCMND, "a");
+                        txtCMND.Focus();
+                    }
+            }
+            else if (DC.kiemtrauerpass(txtTenDangNhap.Text) == false)
+            {
+                MessageBox.Show(" Có Ký tự đặt biệt ở Tên Đăng Nhập ", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Error.SetError(txtTenDangNhap, " a ");
+                txtTenDangNhap.Focus();
+            }
+            else if (DC.kiemtrauerpass(txtMatKhau.Text) == false)
+            {
+                MessageBox.Show(" Có Ký tự đặt biệt ở Mật Khẩu ", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Error.SetError(txtMatKhau, " a ");
+                txtMatKhau.Focus();
+            }
+            else if (DC.kiemtrakitu(txtHo.Text) == false)
+            {
+                MessageBox.Show(" Có Ký tự đặt biệt ở Họ ", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Error.SetError(txtHo, " a ");
+                txtHo.Focus();
+            }
+            else if (DC.kiemtrakitu(txtTen.Text) == false)
+            {
+                MessageBox.Show(" Có Ký tự đặt biệt ở Ten ", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Error.SetError(txtTen, " a ");
+                txtTen.Focus();
+            }
+            else if (DC.kiemtrakitu(txtDiaChi.Text) == false)
+            {
+                MessageBox.Show(" Có Ký tự đặt biệt ở Địa Chỉ ", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Error.SetError(txtDiaChi, " a ");
+                txtDiaChi.Focus();
+            }
+            else if (DC.SDT(txtSDT.Text)==false)
+            {
+                MessageBox.Show(" Số Điện Thoại phải nằm trong khoảng 10 đên 11 số ", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Error.SetError(txtSDT, " a ");
+                txtSDT.Focus();
+            }
+            else if (DC.CMND(txtCMND.Text)==false)
+            {
+                MessageBox.Show(" CMND phải 9 số và 12 số ", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Error.SetError(txtCMND, " a ");
+                txtCMND.Focus();
+            }
+            else if(DC.MatKhau(txtMatKhau.Text)==false)
+            {
+                MessageBox.Show(" Mật khẩu từ 6 ký tự trở lên ", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Error.SetError(txtMatKhau, " a ");
+                txtMatKhau.Focus();
+            }
+            else
 
                 {
 
@@ -135,6 +199,9 @@ namespace NganHang
                     SqlCommand command = new SqlCommand(nhap, ketnoi);
                     command.ExecuteNonQuery();
                     MessageBox.Show(" Bạn Đăng Ký Thành Công ", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Loi1.Text = null;
+                    Loi8.Text = null;
+                    Loi7.Text = null;
                     this.Close();
                 }
             //else if(kiemtrataikhoantontai() == false || kiemtrasdttontai() == false || kiemtraCMNDtontai() == false)
@@ -144,77 +211,33 @@ namespace NganHang
             //        Loi7.Text = null;
             //    }
         }
-        private bool kiemtrataikhoantontai()
-        {
-            bool kt = false;
-            string tdn = txtTenDangNhap.Text;
-            ketnoi.Open();
-            SqlDataAdapter da_kt = new SqlDataAdapter("Select * from KhachHang where TenDangNhap='" + tdn + "'", ketnoi);
-            DataTable dt_kiemtra = new DataTable();
-            da_kt.Fill(dt_kiemtra);
-            if(dt_kiemtra.Rows.Count>0)
-            {
-                kt = true;
-
-            }
-            da_kt.Dispose();
-            ketnoi.Close();
-            return kt;
-        }
-        private bool kiemtrasdttontai()
-        {
-            string tdn;
-            try
-            {
-                tdn = String.Format(txtSDT.Text);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(" Nhập Sai ", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            bool kt = false;
-            tdn = String.Format(txtSDT.Text);
-           
-            ketnoi.Open();
-            SqlDataAdapter da_kt = new SqlDataAdapter("Select * from KhachHang where SDT='" + tdn + "'", ketnoi);
-            DataTable dt_kiemtra = new DataTable();
-            da_kt.Fill(dt_kiemtra);
-            if (dt_kiemtra.Rows.Count > 0)
-            {
-               kt = true;
-
-            }
-            da_kt.Dispose();
-            ketnoi.Close();
-           
-            return kt;
-        }
-        private bool kiemtraCMNDtontai()
-        {
-            string tdn;
-            try
-            {
-                tdn = String.Format(txtCMND.Text);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(" Nhập Sai ", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            bool kt = false;
-            tdn = String.Format(txtCMND.Text);
-            ketnoi.Open();
-            SqlDataAdapter da_kt = new SqlDataAdapter("Select * from KhachHang where CMND='" + tdn + "'", ketnoi);
-            DataTable dt_kiemtra = new DataTable();
-            da_kt.Fill(dt_kiemtra);
-            if (dt_kiemtra.Rows.Count > 0)
-            {
-                kt = true;
-            }
-            da_kt.Dispose();
-            ketnoi.Close();
+       
+        //private bool kiemtraCMNDtontai()
+        //{
+        //    string tdn;
+        //    try
+        //    {
+        //        tdn = String.Format(txtCMND.Text);
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show(" Nhập Sai ", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        //    }
+        //    bool kt = false;
+        //    tdn = String.Format(txtCMND.Text);
+        //    ketnoi.Open();
+        //    SqlDataAdapter da_kt = new SqlDataAdapter("Select * from KhachHang where CMND='" + tdn + "'", ketnoi);
+        //    DataTable dt_kiemtra = new DataTable();
+        //    da_kt.Fill(dt_kiemtra);
+        //    if (dt_kiemtra.Rows.Count > 0)
+        //    {
+        //        kt = true;
+        //    }
+        //    da_kt.Dispose();
+        //    ketnoi.Close();
             
-            return kt;
-        }
+        //    return kt;
+        //}
 
         protected override bool ProcessDialogKey(Keys keyData)
         {
@@ -222,30 +245,16 @@ namespace NganHang
                 this.Close();
             return base.ProcessDialogKey(keyData);
         }
-        // Hàm Ktra ký tự đặt biệt 
-        string chuoidung = "1234567890_QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasd fghjklzxcvbnm";//Các kí tự đang nhập
-        private bool kiemtrakitu(string chuoiCanKiemTra)
-        {
-            foreach (char kiTu in chuoiCanKiemTra)
-            {
-                bool dung = false;
-
-                foreach (char kitu2 in chuoidung)
-                {
-                    if (kiTu == kitu2)
-                        dung = true;
-                }
-                if (dung == false) return false;
-            }
-
-
-            return true;
-        }
-
-        private void txtCMND_KeyPress(object sender, KeyPressEventArgs e)
+        //áàảạã ăắằẳẵặ âấầẩẫậ êềễểếệ ùúủũụ ưứừửựữ ìíỉịĩ òóỏõọ ôốồỗộổ ờởớỡợơ yýỳỷỹỵ éèẻẹẽ
+        private void txtSDT_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
                 e.Handled = true;
+        }
+
+        private void txtCMND_TextChanged(object sender, EventArgs e)
+        {
+
         }
        
     }

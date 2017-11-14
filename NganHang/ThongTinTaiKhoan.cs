@@ -13,9 +13,9 @@ namespace NganHang
 {
     public partial class ThongTinTaiKhoan : Form
     {
-
-        SqlConnection ketnoi = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Vipper\Desktop\NganHang\Database\NganHang.mdf;Integrated Security=True;Connect Timeout=30");
+        SqlConnection ketnoi = new SqlConnection(@"Server = .;Database =NganHang1;Integrated Security=True");
         public static string user1 = "";
+       
         public ThongTinTaiKhoan()
         {
             InitializeComponent();
@@ -35,35 +35,38 @@ namespace NganHang
             SqlCommand command4 = new SqlCommand("select SDT from KhachHang where TenDangNhap='" + user1 + "'", ketnoi);
             string sdt = (string)command4.ExecuteScalar();
             SqlCommand command5 = new SqlCommand("select Tien from KhachHang where TenDangNhap='" + user1 + "'", ketnoi);
-            int tien = (int)command5.ExecuteScalar();
+            Int64 tien = Convert.ToInt64(command5.ExecuteScalar());
             SqlCommand command6 = new SqlCommand("select DiaChi from KhachHang where TenDangNhap='" + user1 + "'", ketnoi);
             string diachi = (string)command6.ExecuteScalar();
             SqlCommand command7 = new SqlCommand("select NgaySinh from KhachHang where TenDangNhap='" + user1 + "'", ketnoi);
-            txtNgaySinh.Text = command7.ExecuteScalar().ToString();
-            HovaTen.Text = ho.ToString() + " " + ten.ToString();
-            MaThe.Text = mathe.ToString();
-            CMND.Text = cmnd.ToString();
-            SDT.Text = sdt.ToString();
-            SoDu.Text = tien.ToString();
-            DiaChi.Text = diachi.ToString();
+            txtNgaySinh.Text = command7.ExecuteScalar().ToString(); 
+           HovaTen.Text =ho.ToString()+ " "+ten.ToString();
+           MaThe.Text = mathe.ToString();
+           CMND.Text = cmnd.ToString();
+           SDT.Text = sdt.ToString();
+           SoDu.Text = tien.ToString("### ### ### ### VND").Trim();
+           DiaChi.Text = diachi.ToString();
+           
+
+
         }
 
+       
         protected override bool ProcessDialogKey(Keys keyData)
         {
             if (keyData == Keys.Escape)
                 this.Close();
             return base.ProcessDialogKey(keyData);
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            DoiMaPin dmp = new DoiMaPin();
-            dmp.ShowDialog();
-        }
-
         private void btthoat_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DoiMaPin pin = new DoiMaPin();
+            pin.Show();
         }
     }
 }

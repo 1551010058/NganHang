@@ -61,8 +61,8 @@
             this.Loi = new System.Windows.Forms.Label();
             this.txtGioiTinh = new System.Windows.Forms.ComboBox();
             this.txtNgaySinh = new System.Windows.Forms.DateTimePicker();
-            this.txtCMND = new System.Windows.Forms.TextBox();
             this.txtSDT = new System.Windows.Forms.TextBox();
+            this.txtCMND = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -73,7 +73,7 @@
             this.label1.ForeColor = System.Drawing.Color.Red;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(545, 58);
+            this.label1.Size = new System.Drawing.Size(526, 58);
             this.label1.TabIndex = 6;
             this.label1.Text = "Đăng Ký Tài Khoản";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -229,11 +229,12 @@
             // 
             this.btDangKy.Image = ((System.Drawing.Image)(resources.GetObject("btDangKy.Image")));
             this.btDangKy.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btDangKy.Location = new System.Drawing.Point(161, 417);
+            this.btDangKy.Location = new System.Drawing.Point(146, 417);
             this.btDangKy.Name = "btDangKy";
-            this.btDangKy.Size = new System.Drawing.Size(107, 40);
+            this.btDangKy.Size = new System.Drawing.Size(122, 40);
             this.btDangKy.TabIndex = 39;
             this.btDangKy.Text = "Đăng Ký";
+            this.btDangKy.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btDangKy.UseVisualStyleBackColor = true;
             this.btDangKy.Click += new System.EventHandler(this.btDangKy_Click);
             // 
@@ -241,11 +242,12 @@
             // 
             this.btThoat.Image = ((System.Drawing.Image)(resources.GetObject("btThoat.Image")));
             this.btThoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btThoat.Location = new System.Drawing.Point(296, 417);
+            this.btThoat.Location = new System.Drawing.Point(288, 417);
             this.btThoat.Name = "btThoat";
-            this.btThoat.Size = new System.Drawing.Size(107, 40);
+            this.btThoat.Size = new System.Drawing.Size(122, 40);
             this.btThoat.TabIndex = 40;
             this.btThoat.Text = "Thoát";
+            this.btThoat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btThoat.UseVisualStyleBackColor = true;
             this.btThoat.Click += new System.EventHandler(this.btThoat_Click);
             // 
@@ -357,28 +359,31 @@
             this.txtNgaySinh.Size = new System.Drawing.Size(341, 29);
             this.txtNgaySinh.TabIndex = 27;
             // 
-            // txtCMND
-            // 
-            this.txtCMND.Location = new System.Drawing.Point(157, 270);
-            this.txtCMND.Name = "txtCMND";
-            this.txtCMND.Size = new System.Drawing.Size(341, 29);
-            this.txtCMND.TabIndex = 55;
-            this.txtCMND.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCMND_KeyPress);
-            // 
             // txtSDT
             // 
-            this.txtSDT.Location = new System.Drawing.Point(157, 305);
+            this.txtSDT.Location = new System.Drawing.Point(157, 270);
             this.txtSDT.Name = "txtSDT";
+            this.txtSDT.ShortcutsEnabled = false;
             this.txtSDT.Size = new System.Drawing.Size(341, 29);
-            this.txtSDT.TabIndex = 54;
-            this.txtSDT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCMND_KeyPress);
+            this.txtSDT.TabIndex = 52;
+            this.txtSDT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSDT_KeyPress);
+            // 
+            // txtCMND
+            // 
+            this.txtCMND.Location = new System.Drawing.Point(157, 305);
+            this.txtCMND.Name = "txtCMND";
+            this.txtCMND.ShortcutsEnabled = false;
+            this.txtCMND.Size = new System.Drawing.Size(341, 29);
+            this.txtCMND.TabIndex = 53;
+            this.txtCMND.TextChanged += new System.EventHandler(this.txtCMND_TextChanged);
+            this.txtCMND.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSDT_KeyPress);
             // 
             // DangKy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(545, 494);
+            this.ClientSize = new System.Drawing.Size(526, 494);
             this.Controls.Add(this.txtCMND);
             this.Controls.Add(this.txtSDT);
             this.Controls.Add(this.txtNgaySinh);
@@ -460,7 +465,7 @@
         private System.Windows.Forms.Label Loi;
         private System.Windows.Forms.ComboBox txtGioiTinh;
         private System.Windows.Forms.DateTimePicker txtNgaySinh;
-        private System.Windows.Forms.TextBox txtCMND;
         private System.Windows.Forms.TextBox txtSDT;
+        private System.Windows.Forms.TextBox txtCMND;
     }
 }
