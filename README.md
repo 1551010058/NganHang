@@ -5,10 +5,13 @@ Giúp cho công việc gửi tiền của khách hàng thuận tiện và an to�
 
 ## Các chức năng của hệ thống:
 - Đăng ký.
+  + Đổi mật khẩu.
 - Đăng nhập.
 - Kiểm tra tài khoản.
 - Gửi tiền.
 - Rút tiền.
+- Liên kết với CSDL.
+- Quản lý khách hàng (admin).
 
 ## Danh sách thành viên
 - 1551010003 – Lê Anh (Tester)
